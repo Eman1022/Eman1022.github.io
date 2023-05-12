@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fancify Shamcify</title>
+
+		<!-- link to your script file here -->
+		<script src="fancifymytext.js"></script>
+
+		<style>
+			input[type="radio"] {
+			  margin-right: 10px; /* adds 10px of space between radio buttons */
+			}
+		  </style>
+
+	</head>
+
+	<body>
+		<h1>Fancify my Text</h1>
+		<label for = "text" >Text</label>
+		<fieldset name = "text">
+			<textarea id = "input1" rows = "4" cols = "30"></textarea>
+
+		</fieldset>
+
+		<label for = "btn">Fancify</label>
+
+		<fieldset name = "Fancify">
+			<button name = "but1" onclick = "makeHuge()">Bigger</button>
+			<button onclick="moo()">Moo</button>
+
+			<label for = "fancy">FancyShmancy</label>
+			<input id = "fancy" type="radio" name="style" value="fancy" onchange="makeFancy()">
+			
+			<label for = "boring">BoringBetty</label>
+			<input id = "boring" type="radio" name="style" value="boring" onchange="makeBoring()">
+
+			<label for="empty"><input id="empty" type="radio" name="style" value="">None</label>
+		</fieldset>		
+	</body>
+</html>
