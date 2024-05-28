@@ -2,31 +2,48 @@
 <html>
 <head>
   <title>My Projects</title>
-  <p>Back to <a href="index.html">Home</a></p>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <style>
-    .project-slideshow {
-      max-width: 500px;
-      position: relative;
-      margin: auto;
-    }
-    .project-slide {
-      display: none;
-    }
-    .w3-display-container img {
-      width: 500px;
-      height: auto;
-    }
-  </style>
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="w3-container w3-theme-l1">
-  <h1>My Projects</h1>
-</header>
+  <!------------------------------------------------ Side Navigation --------------------------------------->
+  <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+    <h1 class="w3-xxxlarge w3-text-theme">Explore</h1>
+    <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>    
+    <a href="https://github.com/Eman1022" class="w3-bar-item w3-button">Github Projects</a>
+    <a href="#" class="w3-bar-item w3-button">Hobbies</a>
+
+  </nav>
+
+  <script>
+    // Function to open the sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+  
+    // Function to close the sidebar
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
+  <!------------------------------------------------ Side Navigation --------------------------------------->
+  <header class="w3-container w3-theme w3-padding" id="myHeader">
+    <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
+    <div class="w3-xxxlarge w3-animate-left">
+    <h4>Projects</h4>
+      <div class="w3-padding-32">
+      </div>
+    </div>
+  </header>
 
   <div class="w3-container w3-margin-top">
-    <h2>Engineering</h2>
+    <h2 class="w3-xlarge w3-animate-bottom w3-text-black">Engineering</h2>
 
     <div class="project-slideshow w3-display-container" id="project1-slideshow">
       <img class="project-slide" src="Images/ETBaby.jpeg" alt="Project 1 Image 1">
@@ -36,7 +53,7 @@
       <button class="w3-button w3-display-right" onclick="plusDivs(1, 0)">&#10095;</button>
     </div>
 
-    <p>Description of Project 1...</p>
+    <p class="w3-large w3-animate-bottom w3-text-black">Description of Project 1...</p>
   </div>
 
 <!-- Add more projects as needed -->

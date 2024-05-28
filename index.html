@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>W3.CSS Template</title>
+<title>Personal Website ET</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!------------------------------------------------ Side Navigation --------------------------------------->
     <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
-      <h1 class="w3-xxxlarge w3-text-theme">Side Navigation</h1>
+      <h1 class="w3-xxxlarge w3-text-theme">Explore</h1>
       <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+      <a href="index.html" class="w3-bar-item w3-button">Home</a>    
       <a href="#" class="w3-bar-item w3-button">Github Projects</a>
+      <a href="#" class="w3-bar-item w3-button">Hobbies</a>
+
     </nav>
 
     <script>
@@ -41,23 +45,22 @@
       </div>
     </header>
     
-    <!-- Modal -->
+    <!--------------------------------------------------- Modal ----------------------->
 <div id="id01" class="w3-modal">
-    <div class="w3-modal-content w3-card-4 w3-animate-top">
-      <header class="w3-container w3-theme-l1"> 
+    <div class="w3-modal-content w2-card-2 w3-animate-top">
+      <header class="w3-container w3-theme-l1" style="height: 150px;"> 
         <span onclick="document.getElementById('id01').style.display='none'"
         class="w3-button w3-display-topright">×</span>
-        <h4>Oh snap! We just showed you a modal..</h4>
-        <h5>Because we can <i class="fa fa-smile-o"></i></h5>
+        <h4 class = "w3-xxxlarge">Social Media/Contact Information</h4>
       </header>
       <div class="w3-padding">
-        <p>Cool huh? Ok, enough teasing around..</p>
-        <p>Go to my <a class="w3-btn" href="https://www.linkedin.com/in/emanueltadeo/"> <strong>Linkedin Profile</strong></a> to learn more!!</p>
+        <p>(916)840-6068</p>
+        <p>emanueltadeo1022@gmail.com</p>
+        <p>Go to my <a class="w3-btn" href="https://www.linkedin.com/in/emanueltadeo/"> <strong class="strong-text">Linkedin</strong> </a> to learn more!!</p>
       </div>
       <footer class="w3-container w3-theme-l1">
-        <p>Please Look at my hobbies <a class="w3-btn" href="projects.html"> <strong>Click Here!!</strong> </a></p>
+        <p>Please Look at my hobbies **<a class="w3-btn" href="projects.html"> <strong class="strong-text">Click Here</strong> </a>**</p>
       </footer>
     </div>
 </div>
-
 </body>    
