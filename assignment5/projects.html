@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Projects</title>
+  <p>Back to <a href="homePage.html">Home</a></p>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    .project-slideshow {
+      max-width: 500px;
+      position: relative;
+      margin: auto;
+    }
+    .project-slide {
+      display: none;
+    }
+    .w3-display-container img {
+      width: 500px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+<header class="w3-container w3-theme-l1">
+  <h1>My Projects</h1>
+</header>
+
+  <div class="w3-container w3-margin-top">
+    <h2>Project 1</h2>
+
+    <div class="project-slideshow w3-display-container">
+      <img class="project-slide" src="/Users/emanueltadeo/Documents/Sites/Eman1022.github.io/assignment5/Images/ETBaby.jpeg" alt="Project 1 Image 1">
+      <img class="project-slide" src="/Users/emanueltadeo/Documents/Sites/Eman1022.github.io/assignment5/Images/woodWork.JPG" alt="Project 1 Image 2">
+      <img class="project-slide" src="/Users/emanueltadeo/Documents/Sites/Eman1022.github.io/assignment5/Images/lazerCutter.jpeg" alt="Project 1 Image 3">
+      <button class="w3-button w3-display-left" onclick="plusDivs(-1, 0)">&#10094;</button>
+      <button class="w3-button w3-display-right" onclick="plusDivs(1, 0)">&#10095;</button>
+    </div>
+
+    <p>Description of Project 1...</p>
+  </div>
+
+<!-- Add more projects as needed -->
+
+<footer class="w3-container w3-theme-l1 w3-margin-top">
+</footer>
+<script>
+    var slideIndex = [1, 1];
+    var slideId = ["project1-slides", "project2-slides"]
+    showDivs(1, 0);
+    showDivs(1, 1);
+  
+    function plusDivs(n, no) {
+      showDivs(slideIndex[no] += n, no);
+    }
+  
+    function showDivs(n, no) {
+      var i;
+      var x = document.getElementsByClassName("project-slide");
+      if (n > x.length) {slideIndex[no] = 1}    
+      if (n < 1) {slideIndex[no] = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex[no]-1].style.display = "block";  
+    }
+  </script>
+  
+</body>
+</html>
