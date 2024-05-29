@@ -66,10 +66,16 @@ black-text {
   color: black;
 }
 #gameContainer {
-  width: 800px;
-  height: 600px;
+  width: auto;
+  height: 650px;
   border: 1px solid #000;
   margin: 20px auto;
 }
+.footer-custom {
+  padding: 22px; /* Increase padding to make it thicker */
+  height: auto; /* Alternatively, you can set a fixed height */
+  font-size: 16px; /* Adjust the font size if needed */
+}
+
 
 /* Add more global styles as needed */

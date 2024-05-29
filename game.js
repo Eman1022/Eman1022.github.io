@@ -21,12 +21,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
     function drawBall() {
         ctx.beginPath();
         ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI * 2);
-        ctx.fillStyle = "#0095DD";
+        ctx.fillStyle = "#101820";
         ctx.fill();
         ctx.closePath();
         // Draw the text on the ball
-        ctx.font = "16px Arial"; // Set the font properties
-        ctx.fillStyle = "#FFFFFF"; // Set the text color
+        ctx.font = "30px Arial"; // Set the font properties
+        ctx.fillStyle = "#EDF4F2"; // Set the text color
         ctx.textAlign = "center"; // Center the text horizontally
         ctx.textBaseline = "middle"; // Center the text vertically
         ctx.fillText("Work In Progress", ball.x, ball.y); // The text and its position
