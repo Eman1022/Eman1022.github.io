@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         y: canvas.height / 2,
         dx: 2,
         dy: 2,
-        radius: 20
+        radius: 200
     };
     
     function drawBall() {
@@ -24,6 +24,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
         ctx.fillStyle = "#0095DD";
         ctx.fill();
         ctx.closePath();
+        // Draw the text on the ball
+        ctx.font = "16px Arial"; // Set the font properties
+        ctx.fillStyle = "#FFFFFF"; // Set the text color
+        ctx.textAlign = "center"; // Center the text horizontally
+        ctx.textBaseline = "middle"; // Center the text vertically
+        ctx.fillText("Work In Progress", ball.x, ball.y); // The text and its position
     }
     
     function update() {
