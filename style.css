@@ -44,7 +44,7 @@ body {
 }
 
 .project-slideshow {
-  max-width: 500px;
+  max-width: 550px; /* Control the arrow width */
   position: relative;
   margin: auto;
 }
@@ -52,8 +52,8 @@ body {
   display: none;
 }
 .w3-display-container img {
-  width: 550px;
-  height: 500px;
+  width: 550px; /* Control the image width */
+  height: 500px; /* Control the image height */
 }
 h2 {
   font-size: 24px; /* Adjust the size as needed */
